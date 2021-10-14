@@ -5,12 +5,12 @@ jobs:
   job1:
     runs-on: [ubuntu-latest]
     steps:
-      - name: Commit files # commit the output folder
+      - name: Commit files 
         run: |
-           git add . --force
+           git add . 
            git commit -m "Add changes"
-      - name: Push changes # push the output folder to your repo
-        uses: ad-m/github-push-action@master
+      - name: Push changes 
+        uses: covid19-information/add-and-commit@v7
         with:
           branch: master
           github_token: ${{ secrets.GITHUB_TOKEN }}
