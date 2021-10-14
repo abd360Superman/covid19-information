@@ -1,0 +1,19 @@
+name: commitfiles
+on: [push]
+
+jobs:
+  job1:
+    runs-on: [ubuntu-latest]
+    steps:
+      - name: Commit files # commit the output folder
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "github-actions"
+          git add .
+          git commit -m "Add changes"
+      - name: Push changes # push the output folder to your repo
+        uses: ad-m/github-push-action@master
+        with:
+          branch: master
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          force: true

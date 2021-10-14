@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Title, Webpage Icon-->
+    <title>World COVID-19 Data</title>
+    <link rel="shortcut icon" href="imgs/page-icon.png" type="image/x-icon">
+    
+    <!-- Google Fonts Link-->
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body onload='loadCovidData()'>
+    <!-- Header -->
+    <header>
+      <div class='container'>
+        <div class='row'>
+          <img src='imgs/page-icon.png' id='header_img' class='col-xs-6'>
+          <div class='heading col-xs-6'>
+            <h1>World COVID-19 Data</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Precautions -->
+    <div class='container'>
+      <center>
+        <div class='col-xs-12 col-md-8' id='precautions'>
+          <div class='row'>
+            <img src='imgs/mask.png' id='prec_img' class='col-xs-5'>
+            <div class='col-xs-6'>
+              <h2 id='tip'>Wear a mask!</h2>
+            </div>
+          </div>
+        </div>
+        <div class='row'>
+          <button onclick='back()' id='back' class='col-xs-5'>Back</button>
+          <button onclick='next()' id='next' class='col-xs-5'>Next</button>
+        </div>
+      </center>
+    </div>
+    
+    <hr>
+
+    <!-- COVID Data -->
+    <div class="container">
+      <h2>Vaccination</h2>
+      <div id='v_data'>

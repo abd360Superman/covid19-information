@@ -1,0 +1,97 @@
+/** BASIC STYLES**/
+:root {
+  --black: #272727;
+  --grey: #747474;
+  --orange: #FF652F;
+  --yellow: #FFE400;
+  --green: #14A76C;
+}
+
+* {
+  font-family: 'Comic Neue', cursive;
+  font-size: 1.2em;
+}
+
+body {
+  background-color: var(--grey);
+}
+
+/** Header Styles **/
+
+header {
+  width: 100%;
+  background-color: var(--yellow);
+}
+
+header .heading {
+  color: var(--black);
+}
+
+header #header_img {
+  margin: 5px 5px 5px 0; 
+  width: 200px;
+  height: 180px;
+}
+
+/** Footer Styles **/
+footer {
+  background-color: var(--orange);
+  color: var(--black);
+}
+footer a {
+  font-size: 0.6em;
+}
+
+/** Precautions **/
+#precautions {
+  background-color: var(--green);
+  color: var(--black);
+  font-size: 0.9em;
+  margin: 10px;
+}
+
+#precautions #prec_img {
+  margin: 5px 5px 5px 0; 
+}
+
+#next, #back {
+  background-color: var(--green);
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 8px;
+  border: 2px solid black;
+}
+
+/**Mask Recognizer**/
+#start_btn {
+  background-color: var(--green);
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 8px;
+  border: 2px solid black;
+}
+
+/**Cases and Vaccination Data**/
+td {
+  border: 1px solid black;
+  width: 8%;
+  overflow: auto;
+  font-size: 0.8em;
+  padding: 2px;
+}
+
+td.name {
+  width: 12%
+}
+
+tr.header {
+  font-weight: bold;
+}
+
+tr:nth-child(odd) {
+  background: var(--orange)
+}
+
+tr:nth-child(even) {
+  background: var(--yellow)
+}

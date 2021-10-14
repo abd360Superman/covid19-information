@@ -1,0 +1,34 @@
+</div>
+</div>
+    
+    <hr>
+    
+    <!-- Mask Recognizer -->
+    <div class='container'>
+      <button onclick='startRecognizer()' class='col-xs-11' id='start_btn'>Click here to see if someone is wearing a mask!</button><br>
+      <h2 id="result"></h2>
+      <div id='appendCamView'></div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+      <div class='container'>
+        <h3>Created by Darsh Choudhary</h3>
+        <h3>Data Sources: </h3>
+        <p>
+          <a href='https://covid19.who.int/WHO-COVID-19-global-table-data.csv'>https://covid19.who.int/WHO-COVID-19-global-table-data.csv</a><br>
+          <a href='https://covid19.who.int/who-data/vaccination-data.csv'>https://covid19.who.int/who-data/vaccination-data.csv</a><br>
+          <a href='https://teachablemachine.withgoogle.com/models/z1bAq0zGI/model.json'>https://teachablemachine.withgoogle.com/models/z1bAq0zGI/model.json</a>
+        </p>
+      </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+    <script src="js/precautions.js"></script>
+    <script src="js/maskrecog.js"></script>
+  </body>
+</html>
