@@ -1,0 +1,1 @@
+[![commitfiles](https://github.com/abd360Superman/covid19-information/actions/workflows/commitfiles.yml/badge.svg)](https://github.com/abd360Superman/covid19-information/actions/workflows/commitfiles.yml)
