@@ -7,10 +7,10 @@ jobs:
     steps:
       - name: Commit files # commit the output folder
         run: |
-          git config https://github.com/abd360Superman/covid19-information/index.html user.email "action@github.com"
-          git config https://github.com/abd360Superman/covid19-information/index.html user.name "github-actions"
-          git add .
-          git commit -m "Add changes"
+#          git config https://github.com/abd360Superman/covid19-information/index.html user.email "action@github.com"
+#          git config https://github.com/abd360Superman/covid19-information/index.html user.name "github-actions"
+           git add .
+           git commit -m "Add changes"
       - name: Push changes # push the output folder to your repo
         uses: ad-m/github-push-action@master
         with:
