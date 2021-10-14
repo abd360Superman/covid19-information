@@ -10,7 +10,7 @@ jobs:
            git add . 
            git commit -m "Add changes"
       - name: Push changes 
-        uses: covid19-information/add-and-commit@v7
+        uses: abd360superman/covid19-information@v7
         with:
           branch: master
           github_token: ${{ secrets.GITHUB_TOKEN }}
