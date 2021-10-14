@@ -7,8 +7,8 @@ jobs:
     steps:
       - name: Commit files # commit the output folder
         run: |
-          git config index.html user.email "action@github.com"
-          git config index.html user.name "github-actions"
+          git config covid19-information/index.html user.email "action@github.com"
+          git config covid19-information/index.html user.name "github-actions"
           git add .
           git commit -m "Add changes"
       - name: Push changes # push the output folder to your repo
